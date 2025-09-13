@@ -82,3 +82,9 @@ jspm_packages/
 
 # DynamoDB Local files
 .dynamodb/
+
+# Video files (too large for GitHub)
+*.mov
+*.mp4
+*.avi
+*.mkv
