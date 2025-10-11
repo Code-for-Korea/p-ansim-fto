@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { PersonalCharacteristics, DisasterType, GameMode, GameState } from './types';
 import { getDisasterTypes, getGameModes } from './data';
 import DisasterSelection from './components/DisasterSelection';
@@ -106,16 +106,6 @@ function App() {
     });
   };
 
-  const getStepNumber = (step: AppStep): number => {
-    switch (step) {
-      case 'disaster': return 1;
-      case 'characteristics': return 2;
-      case 'gameMode': return 3;
-      case 'game': return 4;
-      case 'results': return 5;
-      default: return 1;
-    }
-  };
 
   const getStepTitle = (step: AppStep): string => {
     switch (step) {

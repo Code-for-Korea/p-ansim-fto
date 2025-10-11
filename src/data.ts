@@ -361,7 +361,9 @@ export const getGoBagItems = (t: any): GoBagItem[] => [
     description: t.bloodPressureMonitorDesc,
     category: 'medical',
     priority: 'high',
-    requiredFor: ['hasHypertension']
+    requiredFor: ['hasHypertension'],
+    weight: 200,
+    volume: 300
   },
   {
     id: 'low_salt_food',
@@ -382,7 +384,9 @@ export const getGoBagItems = (t: any): GoBagItem[] => [
     description: t.saltSnacksDesc,
     category: 'medical',
     priority: 'high',
-    requiredFor: ['hasLowBloodPressure']
+    requiredFor: ['hasLowBloodPressure'],
+    weight: 150,
+    volume: 200
   },
   {
     id: 'compression_stockings',
@@ -403,7 +407,9 @@ export const getGoBagItems = (t: any): GoBagItem[] => [
     description: t.communicationCardsDesc,
     category: 'special',
     priority: 'high',
-    requiredFor: ['hasDevelopmentalDisabilities']
+    requiredFor: ['hasDevelopmentalDisabilities'],
+    weight: 50,
+    volume: 100
   },
   {
     id: 'medical_alert_bracelet',
@@ -468,7 +474,9 @@ export const getGoBagItems = (t: any): GoBagItem[] => [
     description: t.emergencyWhistleDesc,
     category: 'special',
     priority: 'high',
-    requiredFor: ['livesNearMountain']
+    requiredFor: ['livesNearMountain'],
+    weight: 50,
+    volume: 100
   },
   {
     id: 'fire_extinguisher',
@@ -555,7 +563,9 @@ export const getGoBagItems = (t: any): GoBagItem[] => [
     description: t.formulaDesc,
     category: 'family',
     priority: 'high',
-    requiredFor: ['hasInfant']
+    requiredFor: ['hasInfant'],
+    weight: 800,
+    volume: 1000
   },
   {
     id: 'baby_carrier',
@@ -620,7 +630,9 @@ export const getGoBagItems = (t: any): GoBagItem[] => [
     description: t.contactLensesDesc,
     category: 'medical',
     priority: 'high',
-    requiredFor: ['wearsGlasses']
+    requiredFor: ['wearsGlasses'],
+    weight: 20,
+    volume: 50
   },
   {
     id: 'lens_solution',
@@ -705,7 +717,9 @@ export const getGoBagItems = (t: any): GoBagItem[] => [
     description: t.handSanitizerDesc,
     category: 'medical',
     priority: 'high',
-    requiredFor: ['wearsGlasses']
+    requiredFor: ['wearsGlasses'],
+    weight: 100,
+    volume: 150
   },
 
   // Earthquake-specific items
@@ -820,7 +834,9 @@ export const getGoBagItems = (t: any): GoBagItem[] => [
     description: t.smokeMaskDesc,
     category: 'disaster',
     priority: 'high',
-    requiredFor: ['fire']
+    requiredFor: ['fire'],
+    weight: 200,
+    volume: 300
   },
   {
     id: 'portable_fire_extinguisher',
@@ -852,7 +868,9 @@ export const getGoBagItems = (t: any): GoBagItem[] => [
     description: t.sealedContainersDesc,
     category: 'disaster',
     priority: 'medium',
-    requiredFor: ['typhoon']
+    requiredFor: ['typhoon'],
+    weight: 300,
+    volume: 500
   },
   {
     id: 'reinforcement_tape',
@@ -873,7 +891,9 @@ export const getGoBagItems = (t: any): GoBagItem[] => [
     description: t.electrolytePowderDesc,
     category: 'disaster',
     priority: 'high',
-    requiredFor: ['heatwave']
+    requiredFor: ['heatwave'],
+    weight: 100,
+    volume: 150
   },
   {
     id: 'reusable_water_bottle',
@@ -968,9 +988,6 @@ export const getEvacuationInstructions = (t: any): EvacuationInstruction[] => [
     description: t.followOfficialsDesc,
     priority: 'high',
     requiredFor: []
-  ,
-    weight: 150,
-    volume: 200
   },
   {
     id: 'avoid_elevators',
@@ -978,9 +995,6 @@ export const getEvacuationInstructions = (t: any): EvacuationInstruction[] => [
     description: t.avoidElevatorsDesc,
     priority: 'high',
     requiredFor: []
-  ,
-    weight: 150,
-    volume: 200
   },
   {
     id: 'use_stairs',
@@ -988,9 +1002,6 @@ export const getEvacuationInstructions = (t: any): EvacuationInstruction[] => [
     description: t.useStairsDesc,
     priority: 'high',
     requiredFor: []
-  ,
-    weight: 150,
-    volume: 200
   },
   {
     id: 'help_others',
@@ -998,9 +1009,6 @@ export const getEvacuationInstructions = (t: any): EvacuationInstruction[] => [
     description: t.helpOthersDesc,
     priority: 'medium',
     requiredFor: []
-  ,
-    weight: 100,
-    volume: 150
   },
   {
     id: 'mobility_assistance',
@@ -1008,9 +1016,6 @@ export const getEvacuationInstructions = (t: any): EvacuationInstruction[] => [
     description: t.mobilityAssistanceDesc,
     priority: 'high',
     requiredFor: ['hasMobilityIssues']
-  ,
-    weight: 150,
-    volume: 200
   },
   {
     id: 'pregnant_evacuation',
@@ -1018,9 +1023,6 @@ export const getEvacuationInstructions = (t: any): EvacuationInstruction[] => [
     description: t.pregnantEvacuationDesc,
     priority: 'high',
     requiredFor: ['isPregnant']
-  ,
-    weight: 150,
-    volume: 200
   },
   {
     id: 'children_safety',
@@ -1028,9 +1030,6 @@ export const getEvacuationInstructions = (t: any): EvacuationInstruction[] => [
     description: t.childrenSafetyDesc,
     priority: 'high',
     requiredFor: ['hasChildren']
-  ,
-    weight: 150,
-    volume: 200
   },
   {
     id: 'pet_evacuation',
@@ -1038,9 +1037,6 @@ export const getEvacuationInstructions = (t: any): EvacuationInstruction[] => [
     description: t.petEvacuationDesc,
     priority: 'medium',
     requiredFor: ['hasPets']
-  ,
-    weight: 100,
-    volume: 150
   },
   {
     id: 'hearing_impaired',
@@ -1048,9 +1044,6 @@ export const getEvacuationInstructions = (t: any): EvacuationInstruction[] => [
     description: t.hearingImpairedDesc,
     priority: 'high',
     requiredFor: ['hasHearingImpairment']
-  ,
-    weight: 150,
-    volume: 200
   },
   {
     id: 'visual_impaired',

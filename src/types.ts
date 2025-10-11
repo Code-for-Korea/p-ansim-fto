@@ -30,7 +30,6 @@ export interface PersonalCharacteristics {
   // Special circumstances
   livesNearMountain: boolean;
   hasInfant: boolean;
-  isPregnant: boolean;
   
   // Other
   hasCar: boolean;

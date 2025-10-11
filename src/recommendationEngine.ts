@@ -1,4 +1,4 @@
-import { PersonalCharacteristics, PersonalizedRecommendations, GoBagItem, EvacuationInstruction } from './types';
+import { PersonalCharacteristics, PersonalizedRecommendations } from './types';
 import { getGoBagItems, getEvacuationInstructions } from './data';
 
 export function generatePersonalizedRecommendations(

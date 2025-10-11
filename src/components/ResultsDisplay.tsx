@@ -14,7 +14,6 @@ interface ResultsDisplayProps {
 
 const ResultsDisplay: React.FC<ResultsDisplayProps> = ({
   disaster,
-  characteristics,
   recommendations,
   gameState,
   onBack,
@@ -53,7 +52,7 @@ const ResultsDisplay: React.FC<ResultsDisplayProps> = ({
     // Sort items within each category by priority
     Object.keys(grouped).forEach(category => {
       grouped[category].sort((a: any, b: any) => {
-        const priorityOrder = { high: 3, medium: 2, low: 1 };
+        const priorityOrder: { [key: string]: number } = { high: 3, medium: 2, low: 1 };
         return priorityOrder[b.priority] - priorityOrder[a.priority];
       });
     });
@@ -75,7 +74,6 @@ const ResultsDisplay: React.FC<ResultsDisplayProps> = ({
   };
 
   const groupedGoBagItems = groupItemsByCategory(recommendations.goBagItems);
-  const groupedInstructions = groupItemsByCategory(recommendations.evacuationInstructions);
 
   const handlePrint = () => {
     window.print();
