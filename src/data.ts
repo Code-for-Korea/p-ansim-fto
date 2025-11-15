@@ -623,6 +623,168 @@ export const getGoBagItems = (t: any): GoBagItem[] => [
     volume: 800
   },
 
+  // Child-specific items
+  {
+    id: 'picture_book',
+    name: t.pictureBook,
+    description: t.pictureBookDesc,
+    category: 'family',
+    priority: 'medium',
+    requiredFor: ['isChild'],
+    weight: 300,
+    volume: 500
+  },
+  {
+    id: 'comic_book',
+    name: t.comicBook,
+    description: t.comicBookDesc,
+    category: 'family',
+    priority: 'medium',
+    requiredFor: ['isChild'],
+    weight: 200,
+    volume: 400
+  },
+  {
+    id: 'family_photo',
+    name: t.familyPhoto,
+    description: t.familyPhotoDesc,
+    category: 'family',
+    priority: 'high',
+    requiredFor: ['isChild'],
+    weight: 50,
+    volume: 100
+  },
+  {
+    id: 'puzzle',
+    name: t.puzzle,
+    description: t.puzzleDesc,
+    category: 'family',
+    priority: 'medium',
+    requiredFor: ['isChild'],
+    weight: 300,
+    volume: 600
+  },
+  {
+    id: 'toy',
+    name: t.toy,
+    description: t.toyDesc,
+    category: 'family',
+    priority: 'medium',
+    requiredFor: ['isChild'],
+    weight: 200,
+    volume: 400
+  },
+  {
+    id: 'doll',
+    name: t.doll,
+    description: t.dollDesc,
+    category: 'family',
+    priority: 'medium',
+    requiredFor: ['isChild'],
+    weight: 300,
+    volume: 500
+  },
+  {
+    id: 'notebook',
+    name: t.notebook,
+    description: t.notebookDesc,
+    category: 'family',
+    priority: 'low',
+    requiredFor: ['isChild'],
+    weight: 200,
+    volume: 300
+  },
+  {
+    id: 'pen',
+    name: t.pen,
+    description: t.penDesc,
+    category: 'family',
+    priority: 'low',
+    requiredFor: ['isChild'],
+    weight: 20,
+    volume: 10
+  },
+  {
+    id: 'pencil',
+    name: t.pencil,
+    description: t.pencilDesc,
+    category: 'family',
+    priority: 'low',
+    requiredFor: ['isChild'],
+    weight: 10,
+    volume: 5
+  },
+  {
+    id: 'colored_pencils',
+    name: t.coloredPencils,
+    description: t.coloredPencilsDesc,
+    category: 'family',
+    priority: 'low',
+    requiredFor: ['isChild'],
+    weight: 100,
+    volume: 150
+  },
+  {
+    id: 'child_mask',
+    name: t.childMask,
+    description: t.childMaskDesc,
+    category: 'family',
+    priority: 'high',
+    requiredFor: ['isChild'],
+    weight: 30,
+    volume: 50
+  },
+  {
+    id: 'child_safety_vest',
+    name: t.childSafetyVest,
+    description: t.childSafetyVestDesc,
+    category: 'family',
+    priority: 'high',
+    requiredFor: ['isChild'],
+    weight: 200,
+    volume: 400
+  },
+  {
+    id: 'child_whistle',
+    name: t.childWhistle,
+    description: t.childWhistleDesc,
+    category: 'family',
+    priority: 'high',
+    requiredFor: ['isChild'],
+    weight: 20,
+    volume: 10
+  },
+  {
+    id: 'child_helmet',
+    name: t.childHelmet,
+    description: t.childHelmetDesc,
+    category: 'family',
+    priority: 'high',
+    requiredFor: ['isChild'],
+    weight: 400,
+    volume: 1000
+  },
+  {
+    id: 'favorite_snacks',
+    name: t.favoriteSnacks,
+    description: t.favoriteSnacksDesc,
+    category: 'family',
+    priority: 'medium',
+    requiredFor: ['isChild'],
+    weight: 300,
+    volume: 500
+  },
+  {
+    id: 'child_toothbrush_set',
+    name: t.childToothbrushSet,
+    description: t.childToothbrushSetDesc,
+    category: 'family',
+    priority: 'medium',
+    requiredFor: ['isChild'],
+    weight: 100,
+    volume: 150
+  },
+
   // Glasses/contact lens items
   {
     id: 'contact_lenses',
@@ -1098,6 +1260,17 @@ export const getGameModes = (t: any): GameMode[] => [
       maxItems: 50
     },
     icon: '👨‍👩‍👧‍👦'
+  },
+  {
+    id: 'child',
+    name: t.childBagMode,
+    description: t.childBagModeDesc,
+    constraints: {
+      maxWeight: 7000, // 7kg
+      maxVolume: 20000, // 20L
+      maxItems: 20
+    },
+    icon: '🎒'
   }
 ];
 

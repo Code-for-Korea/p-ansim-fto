@@ -113,12 +113,14 @@ export interface Translations {
   duffelMode: string;
   emergencyMode: string;
   familyMode: string;
+  childBagMode: string;
   
   // Game mode descriptions
   backpackModeDesc: string;
   duffelModeDesc: string;
   emergencyModeDesc: string;
   familyModeDesc: string;
+  childBagModeDesc: string;
   
   // Game mode constraints
   maxWeight: string;
@@ -287,6 +289,24 @@ export interface Translations {
   artificialTears: string;
   handSanitizer: string;
   
+  // Child-specific items
+  pictureBook: string;
+  comicBook: string;
+  familyPhoto: string;
+  puzzle: string;
+  toy: string;
+  doll: string;
+  notebook: string;
+  pen: string;
+  pencil: string;
+  coloredPencils: string;
+  childMask: string;
+  childSafetyVest: string;
+  childWhistle: string;
+  childHelmet: string;
+  favoriteSnacks: string;
+  childToothbrushSet: string;
+  
   // Descriptions for new items
   glucoseMeterDesc: string;
   glucoseStripsDesc: string;
@@ -328,6 +348,24 @@ export interface Translations {
   glassesStrapDesc: string;
   artificialTearsDesc: string;
   handSanitizerDesc: string;
+  
+  // Child-specific item descriptions
+  pictureBookDesc: string;
+  comicBookDesc: string;
+  familyPhotoDesc: string;
+  puzzleDesc: string;
+  toyDesc: string;
+  dollDesc: string;
+  notebookDesc: string;
+  penDesc: string;
+  pencilDesc: string;
+  coloredPencilsDesc: string;
+  childMaskDesc: string;
+  childSafetyVestDesc: string;
+  childWhistleDesc: string;
+  childHelmetDesc: string;
+  favoriteSnacksDesc: string;
+  childToothbrushSetDesc: string;
   
   // Disaster-specific items
   safetyHelmetEarthquake: string;
@@ -496,12 +534,14 @@ export const translations: Record<'ko' | 'en', Translations> = {
     duffelMode: '덤플백 모드',
     emergencyMode: '비상용 모드',
     familyMode: '가족용 모드',
+    childBagMode: '어린이용 가방 모드',
     
     // Game mode descriptions
     backpackModeDesc: '일반적인 등산 배낭 (30L)',
     duffelModeDesc: '중형 덤플백 (50L)',
     emergencyModeDesc: '소형 비상용 가방 (15L)',
     familyModeDesc: '대형 가족용 가방 (80L)',
+    childBagModeDesc: '어린이용 가방 (20L)',
     
     // Game mode constraints
     maxWeight: '최대 무게',
@@ -670,6 +710,24 @@ export const translations: Record<'ko' | 'en', Translations> = {
     artificialTears: '인공눈물액',
     handSanitizer: '손 소독제',
     
+    // Child-specific items
+    pictureBook: '그림책',
+    comicBook: '만화책',
+    familyPhoto: '가족사진',
+    puzzle: '퍼즐',
+    toy: '장난감',
+    doll: '인형',
+    notebook: '노트',
+    pen: '펜',
+    pencil: '연필',
+    coloredPencils: '색연필',
+    childMask: '어린이용 마스크',
+    childSafetyVest: '어린이 안전 조끼',
+    childWhistle: '호루라기',
+    childHelmet: '어린이 헬멧',
+    favoriteSnacks: '좋아하는 과자',
+    childToothbrushSet: '어린이용 양치 세트',
+    
     // Descriptions for new items
     glucoseMeterDesc: '여분의 배터리 포함',
     glucoseStripsDesc: '혈당 측정용 시험지',
@@ -711,6 +769,24 @@ export const translations: Record<'ko' | 'en', Translations> = {
     glassesStrapDesc: '안경 고정용',
     artificialTearsDesc: '눈 건조 방지용',
     handSanitizerDesc: '렌즈 착용 전 손 소독용',
+    
+    // Child-specific item descriptions
+    pictureBookDesc: '대피할 때 읽을 수 있는 그림책',
+    comicBookDesc: '대피할 때 읽을 수 있는 만화책',
+    familyPhotoDesc: '가족을 생각나게 해주는 사진',
+    puzzleDesc: '대피할 때 할 수 있는 퍼즐',
+    toyDesc: '너의 좋아하는 장난감',
+    dollDesc: '너의 좋아하는 인형이나 봉제인형',
+    notebookDesc: '그림 그리거나 글 쓰는 노트',
+    penDesc: '글 쓰는 펜',
+    pencilDesc: '그림 그리는 연필',
+    coloredPencilsDesc: '색칠할 수 있는 색연필',
+    childMaskDesc: '너에게 맞는 크기의 마스크',
+    childSafetyVestDesc: '대피할 때 어른들이 너를 쉽게 찾을 수 있게 해주는 조끼',
+    childWhistleDesc: '도움이 필요할 때 불 수 있는 호루라기',
+    childHelmetDesc: '너에게 맞는 크기의 안전 헬멧',
+    favoriteSnacksDesc: '너의 좋아하는 과자',
+    childToothbrushSetDesc: '양치할 수 있는 양치 세트',
     
     // Disaster-specific items
     safetyHelmetEarthquake: '안전모·헬멧',
@@ -878,12 +954,14 @@ export const translations: Record<'ko' | 'en', Translations> = {
     duffelMode: 'Duffel Bag Mode',
     emergencyMode: 'Emergency Mode',
     familyMode: 'Family Mode',
+    childBagMode: 'Child Bag Mode',
     
     // Game mode descriptions
     backpackModeDesc: 'General Hiking Backpack (30L)',
     duffelModeDesc: 'Medium Duffel Bag (50L)',
     emergencyModeDesc: 'Small Emergency Bag (15L)',
     familyModeDesc: 'Large Family Bag (80L)',
+    childBagModeDesc: 'Child Bag (20L)',
     
     // Game mode constraints
     maxWeight: 'Max Weight',
@@ -1052,6 +1130,24 @@ export const translations: Record<'ko' | 'en', Translations> = {
     artificialTears: 'Artificial Tears',
     handSanitizer: 'Hand Sanitizer',
     
+    // Child-specific items
+    pictureBook: 'Picture Book',
+    comicBook: 'Comic Book',
+    familyPhoto: 'Family Photo',
+    puzzle: 'Puzzle',
+    toy: 'Toy',
+    doll: 'Doll (or Soft Toy)',
+    notebook: 'Notebook',
+    pen: 'Pen',
+    pencil: 'Pencil',
+    coloredPencils: 'Colored Pencils',
+    childMask: 'Child-Sized Mask',
+    childSafetyVest: 'Child Safety Vest',
+    childWhistle: 'Whistle',
+    childHelmet: 'Child Helmet',
+    favoriteSnacks: 'Favorite Snacks',
+    childToothbrushSet: 'Children\'s Toothbrush Set',
+    
     // Descriptions for new items
     glucoseMeterDesc: 'With extra batteries',
     glucoseStripsDesc: 'For blood glucose testing',
@@ -1093,6 +1189,24 @@ export const translations: Record<'ko' | 'en', Translations> = {
     glassesStrapDesc: 'For glasses retention',
     artificialTearsDesc: 'To prevent dry eyes',
     handSanitizerDesc: 'For hand sanitization before lens insertion',
+    
+    // Child-specific item descriptions
+    pictureBookDesc: 'A book you can read during evacuation',
+    comicBookDesc: 'A comic book you can read during evacuation',
+    familyPhotoDesc: 'A photo that reminds you of your family',
+    puzzleDesc: 'A puzzle you can do during evacuation',
+    toyDesc: 'Your favorite toy',
+    dollDesc: 'Your favorite doll or soft toy',
+    notebookDesc: 'A notebook for drawing or writing',
+    penDesc: 'A pen for writing',
+    pencilDesc: 'A pencil for drawing',
+    coloredPencilsDesc: 'Colored pencils for coloring',
+    childMaskDesc: 'A mask that fits you',
+    childSafetyVestDesc: 'A vest that helps adults find you easily during evacuation',
+    childWhistleDesc: 'A whistle you can blow when you need help',
+    childHelmetDesc: 'A safety helmet that fits you',
+    favoriteSnacksDesc: 'Your favorite snacks',
+    childToothbrushSetDesc: 'A toothbrush set for brushing your teeth',
     
     // Disaster-specific items
     safetyHelmetEarthquake: 'Safety Helmet',
