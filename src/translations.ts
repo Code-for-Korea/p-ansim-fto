@@ -39,6 +39,7 @@ export interface Translations {
   isPregnant: string;
   hasMobilityIssues: string;
   isElderly: string;
+  isChild: string;
   hasHearingImpairment: string;
   hasVisualImpairment: string;
   
@@ -71,8 +72,6 @@ export interface Translations {
   medicationsPlaceholder: string;
   
   // Other info
-  location: string;
-  locationPlaceholder: string;
   hasCar: string;
   hasEmergencyContact: string;
   
@@ -112,12 +111,14 @@ export interface Translations {
   duffelMode: string;
   emergencyMode: string;
   familyMode: string;
+  childBagMode: string;
   
   // Game mode descriptions
   backpackModeDesc: string;
   duffelModeDesc: string;
   emergencyModeDesc: string;
   familyModeDesc: string;
+  childBagModeDesc: string;
   
   // Game mode constraints
   maxWeight: string;
@@ -207,6 +208,7 @@ export interface Translations {
   mobilityAssistance: string;
   pregnantEvacuation: string;
   childrenSafety: string;
+  childEvacuation: string;
   petEvacuation: string;
   hearingImpaired: string;
   visualImpaired: string;
@@ -220,14 +222,15 @@ export interface Translations {
   mobilityAssistanceDesc: string;
   pregnantEvacuationDesc: string;
   childrenSafetyDesc: string;
+  childEvacuationDesc: string;
   petEvacuationDesc: string;
   hearingImpairedDesc: string;
   visualImpairedDesc: string;
   
   // Additional notes
   elderlyNote: string;
+  childNote: string;
   medicalConditionsNote: string;
-  locationNote: string;
   emergencyContactNote: string;
   
   // Disaster-specific notes
@@ -286,6 +289,24 @@ export interface Translations {
   artificialTears: string;
   handSanitizer: string;
   
+  // Child-specific items
+  pictureBook: string;
+  comicBook: string;
+  familyPhoto: string;
+  puzzle: string;
+  toy: string;
+  doll: string;
+  notebook: string;
+  pen: string;
+  pencil: string;
+  coloredPencils: string;
+  childMask: string;
+  childSafetyVest: string;
+  childWhistle: string;
+  childHelmet: string;
+  favoriteSnacks: string;
+  childToothbrushSet: string;
+  
   // Descriptions for new items
   glucoseMeterDesc: string;
   glucoseStripsDesc: string;
@@ -327,6 +348,24 @@ export interface Translations {
   glassesStrapDesc: string;
   artificialTearsDesc: string;
   handSanitizerDesc: string;
+  
+  // Child-specific item descriptions
+  pictureBookDesc: string;
+  comicBookDesc: string;
+  familyPhotoDesc: string;
+  puzzleDesc: string;
+  toyDesc: string;
+  dollDesc: string;
+  notebookDesc: string;
+  penDesc: string;
+  pencilDesc: string;
+  coloredPencilsDesc: string;
+  childMaskDesc: string;
+  childSafetyVestDesc: string;
+  childWhistleDesc: string;
+  childHelmetDesc: string;
+  favoriteSnacksDesc: string;
+  childToothbrushSetDesc: string;
   
   // Disaster-specific items
   safetyHelmetEarthquake: string;
@@ -421,6 +460,7 @@ export const translations: Record<'ko' | 'en', Translations> = {
     isPregnant: '임신 중입니다',
     hasMobilityIssues: '보행에 어려움이 있습니다',
     isElderly: '65세 이상입니다',
+    isChild: '저는 어린이입니다',
     hasHearingImpairment: '청각에 어려움이 있습니다',
     hasVisualImpairment: '시각에 어려움이 있습니다',
     
@@ -453,8 +493,6 @@ export const translations: Record<'ko' | 'en', Translations> = {
     medicationsPlaceholder: '예: 혈압약, 당뇨약',
     
     // Other info
-    location: '거주 지역',
-    locationPlaceholder: '예: 성산동, 강남구',
     hasCar: '자동차를 소유하고 있습니다',
     hasEmergencyContact: '비상연락처를 알고 있습니다',
     
@@ -494,12 +532,14 @@ export const translations: Record<'ko' | 'en', Translations> = {
     duffelMode: '덤플백 모드',
     emergencyMode: '비상용 모드',
     familyMode: '가족용 모드',
+    childBagMode: '어린이용 가방 모드',
     
     // Game mode descriptions
     backpackModeDesc: '일반적인 등산 배낭 (30L)',
     duffelModeDesc: '중형 덤플백 (50L)',
     emergencyModeDesc: '소형 비상용 가방 (15L)',
     familyModeDesc: '대형 가족용 가방 (80L)',
+    childBagModeDesc: '어린이용 가방 (20L)',
     
     // Game mode constraints
     maxWeight: '최대 무게',
@@ -589,6 +629,7 @@ export const translations: Record<'ko' | 'en', Translations> = {
     mobilityAssistance: '보행보조기 사용',
     pregnantEvacuation: '임신부 특별 주의',
     childrenSafety: '아이 안전 확보',
+    childEvacuation: '어린이 대피 안내',
     petEvacuation: '반려동물 대피',
     hearingImpaired: '청각장애인 주의사항',
     visualImpaired: '시각장애인 주의사항',
@@ -602,14 +643,15 @@ export const translations: Record<'ko' | 'en', Translations> = {
     mobilityAssistanceDesc: '보행이 어려운 경우 보조기를 사용하여 안전하게 이동하세요.',
     pregnantEvacuationDesc: '무리하지 말고 천천히 이동하며, 복부를 보호하세요.',
     childrenSafetyDesc: '아이의 손을 잡고 함께 이동하며, 아이가 혼자 남지 않도록 주의하세요.',
+    childEvacuationDesc: '어른들과 함께 이동하고, 혼자 떨어지지 않도록 주의하세요. 도움이 필요하면 호루라기를 불어주세요.',
     petEvacuationDesc: '반려동물을 이동장에 넣고 함께 대피하세요.',
     hearingImpairedDesc: '시각적 신호에 주의하고, 주변 사람들에게 도움을 요청하세요.',
     visualImpairedDesc: '안내견이나 지팡이를 사용하고, 주변 사람들의 도움을 받으세요.',
     
     // Additional notes
     elderlyNote: '고령자이시므로 무리하지 말고 천천히 행동하세요.',
+    childNote: '어린이이므로 어른들과 함께 행동하고, 혼자 떨어지지 않도록 주의하세요.',
     medicalConditionsNote: '의료진에게 다음 질환을 알려주세요:',
-    locationNote: '지역의 대피소 위치를 미리 확인해두세요.',
     emergencyContactNote: '비상연락처를 기억하고 있거나 휴대폰에 저장해두세요.',
     
     // Disaster-specific notes
@@ -668,6 +710,24 @@ export const translations: Record<'ko' | 'en', Translations> = {
     artificialTears: '인공눈물액',
     handSanitizer: '손 소독제',
     
+    // Child-specific items
+    pictureBook: '그림책',
+    comicBook: '만화책',
+    familyPhoto: '가족사진',
+    puzzle: '퍼즐',
+    toy: '장난감',
+    doll: '인형',
+    notebook: '노트',
+    pen: '펜',
+    pencil: '연필',
+    coloredPencils: '색연필',
+    childMask: '어린이용 마스크',
+    childSafetyVest: '어린이 안전 조끼',
+    childWhistle: '호루라기',
+    childHelmet: '어린이 헬멧',
+    favoriteSnacks: '좋아하는 과자',
+    childToothbrushSet: '어린이용 양치 세트',
+    
     // Descriptions for new items
     glucoseMeterDesc: '여분의 배터리 포함',
     glucoseStripsDesc: '혈당 측정용 시험지',
@@ -709,6 +769,24 @@ export const translations: Record<'ko' | 'en', Translations> = {
     glassesStrapDesc: '안경 고정용',
     artificialTearsDesc: '눈 건조 방지용',
     handSanitizerDesc: '렌즈 착용 전 손 소독용',
+    
+    // Child-specific item descriptions
+    pictureBookDesc: '대피할 때 읽을 수 있는 그림책',
+    comicBookDesc: '대피할 때 읽을 수 있는 만화책',
+    familyPhotoDesc: '가족을 생각나게 해주는 사진',
+    puzzleDesc: '대피할 때 할 수 있는 퍼즐',
+    toyDesc: '너의 좋아하는 장난감',
+    dollDesc: '너의 좋아하는 인형이나 봉제인형',
+    notebookDesc: '그림 그리거나 글 쓰는 노트',
+    penDesc: '글 쓰는 펜',
+    pencilDesc: '그림 그리는 연필',
+    coloredPencilsDesc: '색칠할 수 있는 색연필',
+    childMaskDesc: '너에게 맞는 크기의 마스크',
+    childSafetyVestDesc: '대피할 때 어른들이 너를 쉽게 찾을 수 있게 해주는 조끼',
+    childWhistleDesc: '도움이 필요할 때 불 수 있는 호루라기',
+    childHelmetDesc: '너에게 맞는 크기의 안전 헬멧',
+    favoriteSnacksDesc: '너의 좋아하는 과자',
+    childToothbrushSetDesc: '양치할 수 있는 양치 세트',
     
     // Disaster-specific items
     safetyHelmetEarthquake: '안전모·헬멧',
@@ -802,6 +880,7 @@ export const translations: Record<'ko' | 'en', Translations> = {
     isPregnant: 'I am pregnant',
     hasMobilityIssues: 'I have mobility difficulties',
     isElderly: 'I am 65 years or older',
+    isChild: 'I am a child',
     hasHearingImpairment: 'I have hearing difficulties',
     hasVisualImpairment: 'I have visual difficulties',
     
@@ -834,8 +913,6 @@ export const translations: Record<'ko' | 'en', Translations> = {
     medicationsPlaceholder: 'e.g., blood pressure medication, diabetes medication',
     
     // Other info
-    location: 'Location',
-    locationPlaceholder: 'e.g., Seongsan-dong, Gangnam-gu',
     hasCar: 'I own a car',
     hasEmergencyContact: 'I know emergency contacts',
     
@@ -875,12 +952,14 @@ export const translations: Record<'ko' | 'en', Translations> = {
     duffelMode: 'Duffel Bag Mode',
     emergencyMode: 'Emergency Mode',
     familyMode: 'Family Mode',
+    childBagMode: 'Child Bag Mode',
     
     // Game mode descriptions
     backpackModeDesc: 'General Hiking Backpack (30L)',
     duffelModeDesc: 'Medium Duffel Bag (50L)',
     emergencyModeDesc: 'Small Emergency Bag (15L)',
     familyModeDesc: 'Large Family Bag (80L)',
+    childBagModeDesc: 'Child Bag (20L)',
     
     // Game mode constraints
     maxWeight: 'Max Weight',
@@ -970,6 +1049,7 @@ export const translations: Record<'ko' | 'en', Translations> = {
     mobilityAssistance: 'Use Mobility Aid',
     pregnantEvacuation: 'Special Care for Pregnant Women',
     childrenSafety: 'Ensure Children\'s Safety',
+    childEvacuation: 'Child Evacuation Guide',
     petEvacuation: 'Pet Evacuation',
     hearingImpaired: 'For Hearing Impaired',
     visualImpaired: 'For Visually Impaired',
@@ -983,14 +1063,15 @@ export const translations: Record<'ko' | 'en', Translations> = {
     mobilityAssistanceDesc: 'Use mobility aids to move safely if you have difficulty walking.',
     pregnantEvacuationDesc: 'Don\'t overexert yourself, move slowly, and protect your abdomen.',
     childrenSafetyDesc: 'Hold your child\'s hand and move together, making sure they don\'t get left alone.',
+    childEvacuationDesc: 'Stay with adults and make sure you don\'t get separated. Blow your whistle if you need help.',
     petEvacuationDesc: 'Put your pet in a carrier and evacuate together.',
     hearingImpairedDesc: 'Pay attention to visual signals and ask people around you for help.',
     visualImpairedDesc: 'Use a guide dog or cane and ask people around you for help.',
     
     // Additional notes
     elderlyNote: 'Since you are elderly, don\'t overexert yourself and act slowly.',
+    childNote: 'Since you are a child, stay with adults and make sure you don\'t get separated from them.',
     medicalConditionsNote: 'Inform medical personnel about the following conditions:',
-    locationNote: 'Check the location of evacuation centers in your area in advance.',
     emergencyContactNote: 'Remember emergency contacts or save them in your phone.',
     
     // Disaster-specific notes
@@ -1049,6 +1130,24 @@ export const translations: Record<'ko' | 'en', Translations> = {
     artificialTears: 'Artificial Tears',
     handSanitizer: 'Hand Sanitizer',
     
+    // Child-specific items
+    pictureBook: 'Picture Book',
+    comicBook: 'Comic Book',
+    familyPhoto: 'Family Photo',
+    puzzle: 'Puzzle',
+    toy: 'Toy',
+    doll: 'Doll (or Soft Toy)',
+    notebook: 'Notebook',
+    pen: 'Pen',
+    pencil: 'Pencil',
+    coloredPencils: 'Colored Pencils',
+    childMask: 'Child-Sized Mask',
+    childSafetyVest: 'Child Safety Vest',
+    childWhistle: 'Whistle',
+    childHelmet: 'Child Helmet',
+    favoriteSnacks: 'Favorite Snacks',
+    childToothbrushSet: 'Children\'s Toothbrush Set',
+    
     // Descriptions for new items
     glucoseMeterDesc: 'With extra batteries',
     glucoseStripsDesc: 'For blood glucose testing',
@@ -1090,6 +1189,24 @@ export const translations: Record<'ko' | 'en', Translations> = {
     glassesStrapDesc: 'For glasses retention',
     artificialTearsDesc: 'To prevent dry eyes',
     handSanitizerDesc: 'For hand sanitization before lens insertion',
+    
+    // Child-specific item descriptions
+    pictureBookDesc: 'A book you can read during evacuation',
+    comicBookDesc: 'A comic book you can read during evacuation',
+    familyPhotoDesc: 'A photo that reminds you of your family',
+    puzzleDesc: 'A puzzle you can do during evacuation',
+    toyDesc: 'Your favorite toy',
+    dollDesc: 'Your favorite doll or soft toy',
+    notebookDesc: 'A notebook for drawing or writing',
+    penDesc: 'A pen for writing',
+    pencilDesc: 'A pencil for drawing',
+    coloredPencilsDesc: 'Colored pencils for coloring',
+    childMaskDesc: 'A mask that fits you',
+    childSafetyVestDesc: 'A vest that helps adults find you easily during evacuation',
+    childWhistleDesc: 'A whistle you can blow when you need help',
+    childHelmetDesc: 'A safety helmet that fits you',
+    favoriteSnacksDesc: 'Your favorite snacks',
+    childToothbrushSetDesc: 'A toothbrush set for brushing your teeth',
     
     // Disaster-specific items
     safetyHelmetEarthquake: 'Safety Helmet',

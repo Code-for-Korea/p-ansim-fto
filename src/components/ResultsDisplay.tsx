@@ -14,7 +14,6 @@ interface ResultsDisplayProps {
 
 const ResultsDisplay: React.FC<ResultsDisplayProps> = ({
   disaster,
-  characteristics,
   recommendations,
   gameState,
   onBack,
@@ -53,7 +52,7 @@ const ResultsDisplay: React.FC<ResultsDisplayProps> = ({
     // Sort items within each category by priority
     Object.keys(grouped).forEach(category => {
       grouped[category].sort((a: any, b: any) => {
-        const priorityOrder = { high: 3, medium: 2, low: 1 };
+        const priorityOrder: { [key: string]: number } = { high: 3, medium: 2, low: 1 };
         return priorityOrder[b.priority] - priorityOrder[a.priority];
       });
     });
@@ -75,7 +74,6 @@ const ResultsDisplay: React.FC<ResultsDisplayProps> = ({
   };
 
   const groupedGoBagItems = groupItemsByCategory(recommendations.goBagItems);
-  const groupedInstructions = groupItemsByCategory(recommendations.evacuationInstructions);
 
   const handlePrint = () => {
     window.print();
@@ -127,6 +125,56 @@ ${recommendations.additionalNotes.map((note, index) =>
           {t.selectDisasterDesc}
         </p>
       </div>
+
+      {gameState && (
+        <div className="result-card" style={{ marginBottom: '2rem', background: 'linear-gradient(135deg, #28a745, #20c997)', color: 'white' }}>
+          <h5 style={{ color: 'white', marginBottom: '1.5rem', display: 'flex', alignItems: 'center', gap: '8px' }}>
+            <Trophy size={20} />
+            게임 결과
+          </h5>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '1rem', marginBottom: '1.5rem' }}>
+            <div style={{ textAlign: 'center' }}>
+              <div style={{ fontSize: '2rem', fontWeight: 'bold' }}>{gameState.score}</div>
+              <div style={{ fontSize: '0.9rem', opacity: 0.9 }}>점수</div>
+            </div>
+            <div style={{ textAlign: 'center' }}>
+              <div style={{ fontSize: '2rem', fontWeight: 'bold' }}>{gameState.currentItemCount}</div>
+              <div style={{ fontSize: '0.9rem', opacity: 0.9 }}>아이템</div>
+            </div>
+            <div style={{ textAlign: 'center' }}>
+              <div style={{ fontSize: '2rem', fontWeight: 'bold' }}>{(gameState.currentWeight / 1000).toFixed(1)}kg</div>
+              <div style={{ fontSize: '0.9rem', opacity: 0.9 }}>무게</div>
+            </div>
+            <div style={{ textAlign: 'center' }}>
+              <div style={{ fontSize: '2rem', fontWeight: 'bold' }}>{(gameState.currentVolume / 1000).toFixed(1)}L</div>
+              <div style={{ fontSize: '0.9rem', opacity: 0.9 }}>부피</div>
+            </div>
+          </div>
+          <div style={{ 
+            padding: '1rem', 
+            backgroundColor: 'rgba(255, 255, 255, 0.1)', 
+            borderRadius: '8px'
+          }}>
+            <h6 style={{ margin: '0 0 0.5rem 0', display: 'flex', alignItems: 'center', gap: '8px' }}>
+              <Target size={16} />
+              패킹된 아이템
+            </h6>
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(150px, 1fr))', gap: '0.5rem' }}>
+              {gameState.packedItems.map(packed => (
+                <div key={packed.item.id} style={{ 
+                  padding: '0.5rem', 
+                  backgroundColor: 'rgba(255, 255, 255, 0.1)', 
+                  borderRadius: '4px',
+                  fontSize: '0.9rem'
+                }}>
+                  {packed.item.icon && <span style={{ marginRight: '4px' }}>{packed.item.icon}</span>}
+                  {packed.item.name} x{packed.quantity}
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      )}
 
       <div style={{ marginBottom: '2rem' }}>
         <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', marginBottom: '2rem' }}>
@@ -216,55 +264,6 @@ ${recommendations.additionalNotes.map((note, index) =>
                 <li key={index}>{note}</li>
               ))}
             </ul>
-          </div>
-        )}
-
-        {gameState && (
-          <div className="result-card" style={{ marginTop: '2rem', background: 'linear-gradient(135deg, #28a745, #20c997)', color: 'white' }}>
-            <h5 style={{ color: 'white', marginBottom: '1.5rem', display: 'flex', alignItems: 'center', gap: '8px' }}>
-              <Trophy size={20} />
-              게임 결과
-            </h5>
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '1rem', marginBottom: '1.5rem' }}>
-              <div style={{ textAlign: 'center' }}>
-                <div style={{ fontSize: '2rem', fontWeight: 'bold' }}>{gameState.score}</div>
-                <div style={{ fontSize: '0.9rem', opacity: 0.9 }}>점수</div>
-              </div>
-              <div style={{ textAlign: 'center' }}>
-                <div style={{ fontSize: '2rem', fontWeight: 'bold' }}>{gameState.currentItemCount}</div>
-                <div style={{ fontSize: '0.9rem', opacity: 0.9 }}>아이템</div>
-              </div>
-              <div style={{ textAlign: 'center' }}>
-                <div style={{ fontSize: '2rem', fontWeight: 'bold' }}>{(gameState.currentWeight / 1000).toFixed(1)}kg</div>
-                <div style={{ fontSize: '0.9rem', opacity: 0.9 }}>무게</div>
-              </div>
-              <div style={{ textAlign: 'center' }}>
-                <div style={{ fontSize: '2rem', fontWeight: 'bold' }}>{(gameState.currentVolume / 1000).toFixed(1)}L</div>
-                <div style={{ fontSize: '0.9rem', opacity: 0.9 }}>부피</div>
-              </div>
-            </div>
-            <div style={{ 
-              padding: '1rem', 
-              backgroundColor: 'rgba(255, 255, 255, 0.1)', 
-              borderRadius: '8px'
-            }}>
-              <h6 style={{ margin: '0 0 0.5rem 0', display: 'flex', alignItems: 'center', gap: '8px' }}>
-                <Target size={16} />
-                패킹된 아이템
-              </h6>
-              <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(150px, 1fr))', gap: '0.5rem' }}>
-                {gameState.packedItems.map(packed => (
-                  <div key={packed.item.id} style={{ 
-                    padding: '0.5rem', 
-                    backgroundColor: 'rgba(255, 255, 255, 0.1)', 
-                    borderRadius: '4px',
-                    fontSize: '0.9rem'
-                  }}>
-                    {packed.item.name} x{packed.quantity}
-                  </div>
-                ))}
-              </div>
-            </div>
           </div>
         )}
       </div>

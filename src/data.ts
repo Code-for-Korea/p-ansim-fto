@@ -44,7 +44,8 @@ export const getGoBagItems = (t: any): GoBagItem[] => [
     requiredFor: [],
     weight: 3000, // 3L water = 3kg
     volume: 3000, // 3L = 3000cm³
-    isEssential: true
+    isEssential: true,
+    icon: '💧'
   },
   {
     id: 'food',
@@ -55,7 +56,8 @@ export const getGoBagItems = (t: any): GoBagItem[] => [
     requiredFor: [],
     weight: 1500, // 3 days of food
     volume: 2000,
-    isEssential: true
+    isEssential: true,
+    icon: '🍚'
   },
   {
     id: 'flashlight',
@@ -66,7 +68,8 @@ export const getGoBagItems = (t: any): GoBagItem[] => [
     requiredFor: [],
     weight: 200,
     volume: 300,
-    isEssential: true
+    isEssential: true,
+    icon: '🔦'
   },
   {
     id: 'radio',
@@ -77,7 +80,8 @@ export const getGoBagItems = (t: any): GoBagItem[] => [
     requiredFor: [],
     weight: 300,
     volume: 500,
-    isEssential: true
+    isEssential: true,
+    icon: '📻'
   },
   {
     id: 'first_aid',
@@ -88,7 +92,8 @@ export const getGoBagItems = (t: any): GoBagItem[] => [
     requiredFor: [],
     weight: 500,
     volume: 800,
-    isEssential: true
+    isEssential: true,
+    icon: '🩹'
   },
   {
     id: 'whistle',
@@ -99,7 +104,8 @@ export const getGoBagItems = (t: any): GoBagItem[] => [
     requiredFor: [],
     weight: 20,
     volume: 10,
-    isEssential: true
+    isEssential: true,
+    icon: '📣'
   },
   {
     id: 'cash',
@@ -110,7 +116,8 @@ export const getGoBagItems = (t: any): GoBagItem[] => [
     requiredFor: [],
     weight: 50,
     volume: 20,
-    isEssential: true
+    isEssential: true,
+    icon: '💵'
   },
   {
     id: 'documents',
@@ -121,7 +128,8 @@ export const getGoBagItems = (t: any): GoBagItem[] => [
     requiredFor: [],
     weight: 100,
     volume: 200,
-    isEssential: true
+    isEssential: true,
+    icon: '📄'
   },
   {
     id: 'phone_charger',
@@ -132,7 +140,8 @@ export const getGoBagItems = (t: any): GoBagItem[] => [
     requiredFor: [],
     weight: 150,
     volume: 100,
-    isEssential: true
+    isEssential: true,
+    icon: '🔌'
   },
   {
     id: 'clothes',
@@ -142,7 +151,8 @@ export const getGoBagItems = (t: any): GoBagItem[] => [
     priority: 'medium',
     requiredFor: [],
     weight: 800,
-    volume: 2000
+    volume: 2000,
+    icon: '👕'
   },
   {
     id: 'blanket',
@@ -152,7 +162,8 @@ export const getGoBagItems = (t: any): GoBagItem[] => [
     priority: 'medium',
     requiredFor: [],
     weight: 300,
-    volume: 1000
+    volume: 1000,
+    icon: '🧺'
   },
   {
     id: 'toiletries',
@@ -162,7 +173,8 @@ export const getGoBagItems = (t: any): GoBagItem[] => [
     priority: 'medium',
     requiredFor: [],
     weight: 200,
-    volume: 300
+    volume: 300,
+    icon: '🧴'
   },
 
   // Medical items
@@ -174,7 +186,8 @@ export const getGoBagItems = (t: any): GoBagItem[] => [
     priority: 'high',
     requiredFor: ['takesMedications'],
     weight: 100,
-    volume: 50
+    volume: 50,
+    icon: '💊'
   },
   {
     id: 'glasses_extra',
@@ -184,7 +197,8 @@ export const getGoBagItems = (t: any): GoBagItem[] => [
     priority: 'high',
     requiredFor: ['wearsGlasses'],
     weight: 50,
-    volume: 100
+    volume: 100,
+    icon: '👓'
   },
   {
     id: 'hearing_aid_batteries',
@@ -194,7 +208,8 @@ export const getGoBagItems = (t: any): GoBagItem[] => [
     priority: 'high',
     requiredFor: ['hasHearingImpairment'],
     weight: 30,
-    volume: 50
+    volume: 50,
+    icon: '🔋'
   },
   {
     id: 'prenatal_vitamins',
@@ -204,7 +219,8 @@ export const getGoBagItems = (t: any): GoBagItem[] => [
     priority: 'high',
     requiredFor: ['isPregnant'],
     weight: 80,
-    volume: 100
+    volume: 100,
+    icon: '💊'
   },
   {
     id: 'mobility_aid',
@@ -214,7 +230,8 @@ export const getGoBagItems = (t: any): GoBagItem[] => [
     priority: 'high',
     requiredFor: ['hasMobilityIssues'],
     weight: 200,
-    volume: 300
+    volume: 300,
+    icon: '🦽'
   },
 
   // Pet items
@@ -226,7 +243,8 @@ export const getGoBagItems = (t: any): GoBagItem[] => [
     priority: 'high',
     requiredFor: ['hasPets'],
     weight: 500,
-    volume: 800
+    volume: 800,
+    icon: '🐕'
   },
   {
     id: 'pet_water',
@@ -236,7 +254,8 @@ export const getGoBagItems = (t: any): GoBagItem[] => [
     priority: 'high',
     requiredFor: ['hasPets'],
     weight: 1000,
-    volume: 1000
+    volume: 1000,
+    icon: '💧'
   },
   {
     id: 'pet_carrier',
@@ -246,7 +265,8 @@ export const getGoBagItems = (t: any): GoBagItem[] => [
     priority: 'high',
     requiredFor: ['hasPets'],
     weight: 2000,
-    volume: 5000
+    volume: 5000,
+    icon: '📦'
   },
   {
     id: 'pet_medication',
@@ -256,7 +276,8 @@ export const getGoBagItems = (t: any): GoBagItem[] => [
     priority: 'medium',
     requiredFor: ['hasPets'],
     weight: 100,
-    volume: 150
+    volume: 150,
+    icon: '💊'
   },
 
   // Special items
@@ -268,7 +289,8 @@ export const getGoBagItems = (t: any): GoBagItem[] => [
     priority: 'high',
     requiredFor: ['hasChildren'],
     weight: 1500,
-    volume: 2000
+    volume: 2000,
+    icon: '👶'
   },
   {
     id: 'car_keys',
@@ -278,7 +300,8 @@ export const getGoBagItems = (t: any): GoBagItem[] => [
     priority: 'medium',
     requiredFor: ['hasCar'],
     weight: 50,
-    volume: 20
+    volume: 20,
+    icon: '🔑'
   },
 
   // Diabetes-specific items
@@ -290,7 +313,8 @@ export const getGoBagItems = (t: any): GoBagItem[] => [
     priority: 'high',
     requiredFor: ['hasDiabetes'],
     weight: 200,
-    volume: 300
+    volume: 300,
+    icon: '📊'
   },
   {
     id: 'glucose_strips',
@@ -300,7 +324,8 @@ export const getGoBagItems = (t: any): GoBagItem[] => [
     priority: 'high',
     requiredFor: ['hasDiabetes'],
     weight: 50,
-    volume: 100
+    volume: 100,
+    icon: '📏'
   },
   {
     id: 'insulin',
@@ -310,7 +335,8 @@ export const getGoBagItems = (t: any): GoBagItem[] => [
     priority: 'high',
     requiredFor: ['hasDiabetes'],
     weight: 150,
-    volume: 200
+    volume: 200,
+    icon: '💉'
   },
   {
     id: 'insulin_syringes',
@@ -320,7 +346,8 @@ export const getGoBagItems = (t: any): GoBagItem[] => [
     priority: 'high',
     requiredFor: ['hasDiabetes'],
     weight: 150,
-    volume: 200
+    volume: 200,
+    icon: '💉'
   },
   {
     id: 'glucose_snacks',
@@ -330,7 +357,8 @@ export const getGoBagItems = (t: any): GoBagItem[] => [
     priority: 'high',
     requiredFor: ['hasDiabetes'],
     weight: 150,
-    volume: 200
+    volume: 200,
+    icon: '🍬'
   },
   {
     id: 'cooler_bag',
@@ -340,7 +368,8 @@ export const getGoBagItems = (t: any): GoBagItem[] => [
     priority: 'high',
     requiredFor: ['hasDiabetes'],
     weight: 150,
-    volume: 200
+    volume: 200,
+    icon: '🧊'
   },
   {
     id: 'sunglasses',
@@ -348,10 +377,10 @@ export const getGoBagItems = (t: any): GoBagItem[] => [
     description: t.sunglassesDesc,
     category: 'medical',
     priority: 'medium',
-    requiredFor: ['hasDiabetes']
-  ,
+    requiredFor: ['hasDiabetes'],
     weight: 100,
-    volume: 150
+    volume: 150,
+    icon: '🕶️'
   },
 
   // Hypertension-specific items
@@ -361,7 +390,10 @@ export const getGoBagItems = (t: any): GoBagItem[] => [
     description: t.bloodPressureMonitorDesc,
     category: 'medical',
     priority: 'high',
-    requiredFor: ['hasHypertension']
+    requiredFor: ['hasHypertension'],
+    weight: 200,
+    volume: 300,
+    icon: '🩺'
   },
   {
     id: 'low_salt_food',
@@ -369,10 +401,10 @@ export const getGoBagItems = (t: any): GoBagItem[] => [
     description: t.lowSaltFoodDesc,
     category: 'medical',
     priority: 'medium',
-    requiredFor: ['hasHypertension']
-  ,
+    requiredFor: ['hasHypertension'],
     weight: 100,
-    volume: 150
+    volume: 150,
+    icon: '🥗'
   },
 
   // Low blood pressure items
@@ -382,7 +414,10 @@ export const getGoBagItems = (t: any): GoBagItem[] => [
     description: t.saltSnacksDesc,
     category: 'medical',
     priority: 'high',
-    requiredFor: ['hasLowBloodPressure']
+    requiredFor: ['hasLowBloodPressure'],
+    weight: 150,
+    volume: 200,
+    icon: '🍿'
   },
   {
     id: 'compression_stockings',
@@ -390,10 +425,10 @@ export const getGoBagItems = (t: any): GoBagItem[] => [
     description: t.compressionStockingsDesc,
     category: 'medical',
     priority: 'medium',
-    requiredFor: ['hasLowBloodPressure']
-  ,
+    requiredFor: ['hasLowBloodPressure'],
     weight: 100,
-    volume: 150
+    volume: 150,
+    icon: '🧦'
   },
 
   // Developmental disabilities items
@@ -403,7 +438,10 @@ export const getGoBagItems = (t: any): GoBagItem[] => [
     description: t.communicationCardsDesc,
     category: 'special',
     priority: 'high',
-    requiredFor: ['hasDevelopmentalDisabilities']
+    requiredFor: ['hasDevelopmentalDisabilities'],
+    weight: 50,
+    volume: 100,
+    icon: '🗣️'
   },
   {
     id: 'medical_alert_bracelet',
@@ -411,10 +449,10 @@ export const getGoBagItems = (t: any): GoBagItem[] => [
     description: t.medicalAlertBraceletDesc,
     category: 'special',
     priority: 'high',
-    requiredFor: ['hasDevelopmentalDisabilities']
-  ,
+    requiredFor: ['hasDevelopmentalDisabilities'],
     weight: 500,
-    volume: 800
+    volume: 800,
+    icon: '🆔'
   },
   {
     id: 'comfort_food',
@@ -422,10 +460,10 @@ export const getGoBagItems = (t: any): GoBagItem[] => [
     description: t.comfortFoodDesc,
     category: 'special',
     priority: 'medium',
-    requiredFor: ['hasDevelopmentalDisabilities']
-  ,
+    requiredFor: ['hasDevelopmentalDisabilities'],
     weight: 500,
-    volume: 800
+    volume: 800,
+    icon: '🍪'
   },
   {
     id: 'comfort_object',
@@ -433,10 +471,10 @@ export const getGoBagItems = (t: any): GoBagItem[] => [
     description: t.comfortObjectDesc,
     category: 'special',
     priority: 'medium',
-    requiredFor: ['hasDevelopmentalDisabilities']
-  ,
+    requiredFor: ['hasDevelopmentalDisabilities'],
     weight: 500,
-    volume: 800
+    volume: 800,
+    icon: '🧸'
   },
   {
     id: 'noise_cancelling_headphones',
@@ -444,10 +482,10 @@ export const getGoBagItems = (t: any): GoBagItem[] => [
     description: t.noiseCancellingHeadphonesDesc,
     category: 'special',
     priority: 'medium',
-    requiredFor: ['hasDevelopmentalDisabilities']
-  ,
+    requiredFor: ['hasDevelopmentalDisabilities'],
     weight: 500,
-    volume: 800
+    volume: 800,
+    icon: '🎧'
   },
   {
     id: 'emergency_manual',
@@ -455,10 +493,10 @@ export const getGoBagItems = (t: any): GoBagItem[] => [
     description: t.emergencyManualDesc,
     category: 'special',
     priority: 'high',
-    requiredFor: ['hasDevelopmentalDisabilities']
-  ,
+    requiredFor: ['hasDevelopmentalDisabilities'],
     weight: 500,
-    volume: 800
+    volume: 800,
+    icon: '📖'
   },
 
   // Mountain area items
@@ -468,7 +506,10 @@ export const getGoBagItems = (t: any): GoBagItem[] => [
     description: t.emergencyWhistleDesc,
     category: 'special',
     priority: 'high',
-    requiredFor: ['livesNearMountain']
+    requiredFor: ['livesNearMountain'],
+    weight: 50,
+    volume: 100,
+    icon: '📣'
   },
   {
     id: 'fire_extinguisher',
@@ -476,10 +517,10 @@ export const getGoBagItems = (t: any): GoBagItem[] => [
     description: t.fireExtinguisherDesc,
     category: 'special',
     priority: 'high',
-    requiredFor: ['livesNearMountain']
-  ,
+    requiredFor: ['livesNearMountain'],
     weight: 500,
-    volume: 800
+    volume: 800,
+    icon: '🧯'
   },
   {
     id: 'dust_mask',
@@ -487,10 +528,10 @@ export const getGoBagItems = (t: any): GoBagItem[] => [
     description: t.dustMaskDesc,
     category: 'special',
     priority: 'high',
-    requiredFor: ['livesNearMountain']
-  ,
+    requiredFor: ['livesNearMountain'],
     weight: 500,
-    volume: 800
+    volume: 800,
+    icon: '😷'
   },
   {
     id: 'landslide_app',
@@ -498,10 +539,10 @@ export const getGoBagItems = (t: any): GoBagItem[] => [
     description: t.landslideAppDesc,
     category: 'special',
     priority: 'medium',
-    requiredFor: ['livesNearMountain']
-  ,
+    requiredFor: ['livesNearMountain'],
     weight: 500,
-    volume: 800
+    volume: 800,
+    icon: '📱'
   },
   {
     id: 'safety_shoes',
@@ -509,10 +550,10 @@ export const getGoBagItems = (t: any): GoBagItem[] => [
     description: t.safetyShoesDesc,
     category: 'special',
     priority: 'high',
-    requiredFor: ['livesNearMountain']
-  ,
+    requiredFor: ['livesNearMountain'],
     weight: 500,
-    volume: 800
+    volume: 800,
+    icon: '👢'
   },
   {
     id: 'safety_helmet',
@@ -520,10 +561,10 @@ export const getGoBagItems = (t: any): GoBagItem[] => [
     description: t.safetyHelmetDesc,
     category: 'special',
     priority: 'high',
-    requiredFor: ['livesNearMountain']
-  ,
+    requiredFor: ['livesNearMountain'],
     weight: 500,
-    volume: 800
+    volume: 800,
+    icon: '⛑️'
   },
   {
     id: 'evacuation_rope',
@@ -531,10 +572,10 @@ export const getGoBagItems = (t: any): GoBagItem[] => [
     description: t.evacuationRopeDesc,
     category: 'special',
     priority: 'medium',
-    requiredFor: ['livesNearMountain']
-  ,
+    requiredFor: ['livesNearMountain'],
     weight: 500,
-    volume: 800
+    volume: 800,
+    icon: '🪢'
   },
   {
     id: 'portable_lantern',
@@ -542,10 +583,10 @@ export const getGoBagItems = (t: any): GoBagItem[] => [
     description: t.portableLanternDesc,
     category: 'special',
     priority: 'medium',
-    requiredFor: ['livesNearMountain']
-  ,
+    requiredFor: ['livesNearMountain'],
     weight: 500,
-    volume: 800
+    volume: 800,
+    icon: '💡'
   },
 
   // Infant-specific items
@@ -555,7 +596,10 @@ export const getGoBagItems = (t: any): GoBagItem[] => [
     description: t.formulaDesc,
     category: 'family',
     priority: 'high',
-    requiredFor: ['hasInfant']
+    requiredFor: ['hasInfant'],
+    weight: 800,
+    volume: 1000,
+    icon: '🍼'
   },
   {
     id: 'baby_carrier',
@@ -563,10 +607,10 @@ export const getGoBagItems = (t: any): GoBagItem[] => [
     description: t.babyCarrierDesc,
     category: 'family',
     priority: 'high',
-    requiredFor: ['hasInfant']
-  ,
+    requiredFor: ['hasInfant'],
     weight: 1500,
-    volume: 2000
+    volume: 2000,
+    icon: '👶'
   },
   {
     id: 'familiar_toy',
@@ -574,10 +618,10 @@ export const getGoBagItems = (t: any): GoBagItem[] => [
     description: t.familiarToyDesc,
     category: 'family',
     priority: 'medium',
-    requiredFor: ['hasInfant']
-  ,
+    requiredFor: ['hasInfant'],
     weight: 500,
-    volume: 800
+    volume: 800,
+    icon: '🧸'
   },
   {
     id: 'bottle_set',
@@ -585,10 +629,10 @@ export const getGoBagItems = (t: any): GoBagItem[] => [
     description: t.bottleSetDesc,
     category: 'family',
     priority: 'high',
-    requiredFor: ['hasInfant']
-  ,
+    requiredFor: ['hasInfant'],
     weight: 500,
-    volume: 800
+    volume: 800,
+    icon: '🍼'
   },
   {
     id: 'diaper_cream',
@@ -596,10 +640,10 @@ export const getGoBagItems = (t: any): GoBagItem[] => [
     description: t.diaperCreamDesc,
     category: 'family',
     priority: 'medium',
-    requiredFor: ['hasInfant']
-  ,
+    requiredFor: ['hasInfant'],
     weight: 500,
-    volume: 800
+    volume: 800,
+    icon: '🧴'
   },
   {
     id: 'diaper_bags',
@@ -607,10 +651,188 @@ export const getGoBagItems = (t: any): GoBagItem[] => [
     description: t.diaperBagsDesc,
     category: 'family',
     priority: 'medium',
-    requiredFor: ['hasInfant']
-  ,
+    requiredFor: ['hasInfant'],
     weight: 500,
-    volume: 800
+    volume: 800,
+    icon: '👜'
+  },
+
+  // Child-specific items
+  {
+    id: 'picture_book',
+    name: t.pictureBook,
+    description: t.pictureBookDesc,
+    category: 'family',
+    priority: 'medium',
+    requiredFor: ['isChild'],
+    weight: 300,
+    volume: 500,
+    icon: '📚'
+  },
+  {
+    id: 'comic_book',
+    name: t.comicBook,
+    description: t.comicBookDesc,
+    category: 'family',
+    priority: 'medium',
+    requiredFor: ['isChild'],
+    weight: 200,
+    volume: 400,
+    icon: '📖'
+  },
+  {
+    id: 'family_photo',
+    name: t.familyPhoto,
+    description: t.familyPhotoDesc,
+    category: 'family',
+    priority: 'high',
+    requiredFor: ['isChild'],
+    weight: 50,
+    volume: 100,
+    icon: '📷'
+  },
+  {
+    id: 'puzzle',
+    name: t.puzzle,
+    description: t.puzzleDesc,
+    category: 'family',
+    priority: 'medium',
+    requiredFor: ['isChild'],
+    weight: 300,
+    volume: 600,
+    icon: '🧩'
+  },
+  {
+    id: 'toy',
+    name: t.toy,
+    description: t.toyDesc,
+    category: 'family',
+    priority: 'medium',
+    requiredFor: ['isChild'],
+    weight: 200,
+    volume: 400,
+    icon: '🧸'
+  },
+  {
+    id: 'doll',
+    name: t.doll,
+    description: t.dollDesc,
+    category: 'family',
+    priority: 'medium',
+    requiredFor: ['isChild'],
+    weight: 300,
+    volume: 500,
+    icon: '🎎'
+  },
+  {
+    id: 'notebook',
+    name: t.notebook,
+    description: t.notebookDesc,
+    category: 'family',
+    priority: 'medium',
+    requiredFor: ['isChild'],
+    weight: 200,
+    volume: 300,
+    icon: '📓'
+  },
+  {
+    id: 'pen',
+    name: t.pen,
+    description: t.penDesc,
+    category: 'family',
+    priority: 'medium',
+    requiredFor: ['isChild'],
+    weight: 20,
+    volume: 10,
+    icon: '✏️'
+  },
+  {
+    id: 'pencil',
+    name: t.pencil,
+    description: t.pencilDesc,
+    category: 'family',
+    priority: 'low',
+    requiredFor: ['isChild'],
+    weight: 10,
+    volume: 5,
+    icon: '✏️'
+  },
+  {
+    id: 'colored_pencils',
+    name: t.coloredPencils,
+    description: t.coloredPencilsDesc,
+    category: 'family',
+    priority: 'low',
+    requiredFor: ['isChild'],
+    weight: 100,
+    volume: 150,
+    icon: '🖍️'
+  },
+  {
+    id: 'child_mask',
+    name: t.childMask,
+    description: t.childMaskDesc,
+    category: 'family',
+    priority: 'high',
+    requiredFor: ['isChild'],
+    weight: 30,
+    volume: 50,
+    icon: '😷'
+  },
+  {
+    id: 'child_safety_vest',
+    name: t.childSafetyVest,
+    description: t.childSafetyVestDesc,
+    category: 'family',
+    priority: 'high',
+    requiredFor: ['isChild'],
+    weight: 200,
+    volume: 400,
+    icon: '🦺'
+  },
+  {
+    id: 'child_whistle',
+    name: t.childWhistle,
+    description: t.childWhistleDesc,
+    category: 'family',
+    priority: 'high',
+    requiredFor: ['isChild'],
+    weight: 20,
+    volume: 10,
+    icon: '📣'
+  },
+  {
+    id: 'child_helmet',
+    name: t.childHelmet,
+    description: t.childHelmetDesc,
+    category: 'family',
+    priority: 'high',
+    requiredFor: ['isChild'],
+    weight: 400,
+    volume: 1000,
+    icon: '⛑️'
+  },
+  {
+    id: 'favorite_snacks',
+    name: t.favoriteSnacks,
+    description: t.favoriteSnacksDesc,
+    category: 'family',
+    priority: 'medium',
+    requiredFor: ['isChild'],
+    weight: 300,
+    volume: 500,
+    icon: '🍪'
+  },
+  {
+    id: 'child_toothbrush_set',
+    name: t.childToothbrushSet,
+    description: t.childToothbrushSetDesc,
+    category: 'family',
+    priority: 'high',
+    requiredFor: ['isChild'],
+    weight: 100,
+    volume: 150,
+    icon: '🪥'
   },
 
   // Glasses/contact lens items
@@ -620,7 +842,10 @@ export const getGoBagItems = (t: any): GoBagItem[] => [
     description: t.contactLensesDesc,
     category: 'medical',
     priority: 'high',
-    requiredFor: ['wearsGlasses']
+    requiredFor: ['wearsGlasses'],
+    weight: 20,
+    volume: 50,
+    icon: '👁️'
   },
   {
     id: 'lens_solution',
@@ -628,10 +853,10 @@ export const getGoBagItems = (t: any): GoBagItem[] => [
     description: t.lensSolutionDesc,
     category: 'medical',
     priority: 'high',
-    requiredFor: ['wearsGlasses']
-  ,
+    requiredFor: ['wearsGlasses'],
     weight: 150,
-    volume: 200
+    volume: 200,
+    icon: '💧'
   },
   {
     id: 'lens_case',
@@ -639,10 +864,10 @@ export const getGoBagItems = (t: any): GoBagItem[] => [
     description: t.lensCaseDesc,
     category: 'medical',
     priority: 'medium',
-    requiredFor: ['wearsGlasses']
-  ,
+    requiredFor: ['wearsGlasses'],
     weight: 100,
-    volume: 150
+    volume: 150,
+    icon: '📦'
   },
   {
     id: 'lens_tweezers',
@@ -650,10 +875,10 @@ export const getGoBagItems = (t: any): GoBagItem[] => [
     description: t.lensTweezersDesc,
     category: 'medical',
     priority: 'low',
-    requiredFor: ['wearsGlasses']
-  ,
+    requiredFor: ['wearsGlasses'],
     weight: 80,
-    volume: 120
+    volume: 120,
+    icon: '🔧'
   },
   {
     id: 'glasses_cleaner',
@@ -661,10 +886,10 @@ export const getGoBagItems = (t: any): GoBagItem[] => [
     description: t.glassesCleanerDesc,
     category: 'medical',
     priority: 'medium',
-    requiredFor: ['wearsGlasses']
-  ,
+    requiredFor: ['wearsGlasses'],
     weight: 100,
-    volume: 150
+    volume: 150,
+    icon: '🧽'
   },
   {
     id: 'glasses_case',
@@ -672,10 +897,10 @@ export const getGoBagItems = (t: any): GoBagItem[] => [
     description: t.glassesCaseDesc,
     category: 'medical',
     priority: 'medium',
-    requiredFor: ['wearsGlasses']
-  ,
+    requiredFor: ['wearsGlasses'],
     weight: 100,
-    volume: 150
+    volume: 150,
+    icon: '📦'
   },
   {
     id: 'glasses_strap',
@@ -683,10 +908,10 @@ export const getGoBagItems = (t: any): GoBagItem[] => [
     description: t.glassesStrapDesc,
     category: 'medical',
     priority: 'low',
-    requiredFor: ['wearsGlasses']
-  ,
+    requiredFor: ['wearsGlasses'],
     weight: 80,
-    volume: 120
+    volume: 120,
+    icon: '🪢'
   },
   {
     id: 'artificial_tears',
@@ -694,10 +919,10 @@ export const getGoBagItems = (t: any): GoBagItem[] => [
     description: t.artificialTearsDesc,
     category: 'medical',
     priority: 'medium',
-    requiredFor: ['wearsGlasses']
-  ,
+    requiredFor: ['wearsGlasses'],
     weight: 100,
-    volume: 150
+    volume: 150,
+    icon: '💧'
   },
   {
     id: 'hand_sanitizer',
@@ -705,7 +930,10 @@ export const getGoBagItems = (t: any): GoBagItem[] => [
     description: t.handSanitizerDesc,
     category: 'medical',
     priority: 'high',
-    requiredFor: ['wearsGlasses']
+    requiredFor: ['wearsGlasses'],
+    weight: 100,
+    volume: 150,
+    icon: '🧴'
   },
 
   // Earthquake-specific items
@@ -717,7 +945,8 @@ export const getGoBagItems = (t: any): GoBagItem[] => [
     priority: 'high',
     requiredFor: ['earthquake'],
     weight: 800,
-    volume: 2000
+    volume: 2000,
+    icon: '⛑️'
   },
   {
     id: 'safety_gloves',
@@ -727,7 +956,8 @@ export const getGoBagItems = (t: any): GoBagItem[] => [
     priority: 'high',
     requiredFor: ['earthquake'],
     weight: 100,
-    volume: 200
+    volume: 200,
+    icon: '🧤'
   },
   {
     id: 'sturdy_shoes',
@@ -737,7 +967,8 @@ export const getGoBagItems = (t: any): GoBagItem[] => [
     priority: 'high',
     requiredFor: ['earthquake'],
     weight: 1200,
-    volume: 3000
+    volume: 3000,
+    icon: '👟'
   },
   {
     id: 'multi_tool',
@@ -747,7 +978,8 @@ export const getGoBagItems = (t: any): GoBagItem[] => [
     priority: 'medium',
     requiredFor: ['earthquake'],
     weight: 300,
-    volume: 400
+    volume: 400,
+    icon: '🔧'
   },
   {
     id: 'dust_mask_earthquake',
@@ -757,7 +989,8 @@ export const getGoBagItems = (t: any): GoBagItem[] => [
     priority: 'high',
     requiredFor: ['earthquake'],
     weight: 50,
-    volume: 100
+    volume: 100,
+    icon: '😷'
   },
 
   // Flood-specific items
@@ -769,7 +1002,8 @@ export const getGoBagItems = (t: any): GoBagItem[] => [
     priority: 'high',
     requiredFor: ['flood'],
     weight: 200,
-    volume: 500
+    volume: 500,
+    icon: '👜'
   },
   {
     id: 'waterproof_pouch',
@@ -779,7 +1013,8 @@ export const getGoBagItems = (t: any): GoBagItem[] => [
     priority: 'high',
     requiredFor: ['flood'],
     weight: 100,
-    volume: 200
+    volume: 200,
+    icon: '💼'
   },
   {
     id: 'rubber_boots',
@@ -789,7 +1024,8 @@ export const getGoBagItems = (t: any): GoBagItem[] => [
     priority: 'high',
     requiredFor: ['flood'],
     weight: 800,
-    volume: 1500
+    volume: 1500,
+    icon: '👢'
   },
   {
     id: 'raincoat',
@@ -799,7 +1035,8 @@ export const getGoBagItems = (t: any): GoBagItem[] => [
     priority: 'high',
     requiredFor: ['flood'],
     weight: 800,
-    volume: 1500
+    volume: 1500,
+    icon: '🧥'
   },
   {
     id: 'flotation_device',
@@ -807,10 +1044,10 @@ export const getGoBagItems = (t: any): GoBagItem[] => [
     description: t.flotationDeviceDesc,
     category: 'disaster',
     priority: 'high',
-    requiredFor: ['flood']
-  ,
+    requiredFor: ['flood'],
     weight: 500,
-    volume: 1000
+    volume: 1000,
+    icon: '🛟'
   },
 
   // Fire-specific items
@@ -820,7 +1057,10 @@ export const getGoBagItems = (t: any): GoBagItem[] => [
     description: t.smokeMaskDesc,
     category: 'disaster',
     priority: 'high',
-    requiredFor: ['fire']
+    requiredFor: ['fire'],
+    weight: 200,
+    volume: 300,
+    icon: '😷'
   },
   {
     id: 'portable_fire_extinguisher',
@@ -828,10 +1068,10 @@ export const getGoBagItems = (t: any): GoBagItem[] => [
     description: t.portableFireExtinguisherDesc,
     category: 'disaster',
     priority: 'high',
-    requiredFor: ['fire']
-  ,
+    requiredFor: ['fire'],
     weight: 1000,
-    volume: 1500
+    volume: 1500,
+    icon: '🧯'
   },
   {
     id: 'escape_route_map',
@@ -839,10 +1079,10 @@ export const getGoBagItems = (t: any): GoBagItem[] => [
     description: t.escapeRouteMapDesc,
     category: 'disaster',
     priority: 'medium',
-    requiredFor: ['fire']
-  ,
+    requiredFor: ['fire'],
     weight: 50,
-    volume: 100
+    volume: 100,
+    icon: '🗺️'
   },
 
   // Typhoon-specific items
@@ -852,7 +1092,10 @@ export const getGoBagItems = (t: any): GoBagItem[] => [
     description: t.sealedContainersDesc,
     category: 'disaster',
     priority: 'medium',
-    requiredFor: ['typhoon']
+    requiredFor: ['typhoon'],
+    weight: 300,
+    volume: 500,
+    icon: '📦'
   },
   {
     id: 'reinforcement_tape',
@@ -860,10 +1103,10 @@ export const getGoBagItems = (t: any): GoBagItem[] => [
     description: t.reinforcementTapeDesc,
     category: 'disaster',
     priority: 'medium',
-    requiredFor: ['typhoon']
-  ,
+    requiredFor: ['typhoon'],
     weight: 300,
-    volume: 600
+    volume: 600,
+    icon: '📏'
   },
 
   // Heatwave-specific items
@@ -873,7 +1116,10 @@ export const getGoBagItems = (t: any): GoBagItem[] => [
     description: t.electrolytePowderDesc,
     category: 'disaster',
     priority: 'high',
-    requiredFor: ['heatwave']
+    requiredFor: ['heatwave'],
+    weight: 100,
+    volume: 150,
+    icon: '🧂'
   },
   {
     id: 'reusable_water_bottle',
@@ -881,10 +1127,10 @@ export const getGoBagItems = (t: any): GoBagItem[] => [
     description: t.reusableWaterBottleDesc,
     category: 'disaster',
     priority: 'high',
-    requiredFor: ['heatwave']
-  ,
+    requiredFor: ['heatwave'],
     weight: 200,
-    volume: 300
+    volume: 300,
+    icon: '🍶'
   },
   {
     id: 'uv_hat',
@@ -892,10 +1138,10 @@ export const getGoBagItems = (t: any): GoBagItem[] => [
     description: t.uvHatDesc,
     category: 'disaster',
     priority: 'high',
-    requiredFor: ['heatwave']
-  ,
+    requiredFor: ['heatwave'],
     weight: 200,
-    volume: 500
+    volume: 500,
+    icon: '👒'
   },
   {
     id: 'breathable_clothing',
@@ -903,10 +1149,10 @@ export const getGoBagItems = (t: any): GoBagItem[] => [
     description: t.breathableClothingDesc,
     category: 'disaster',
     priority: 'medium',
-    requiredFor: ['heatwave']
-  ,
+    requiredFor: ['heatwave'],
     weight: 200,
-    volume: 500
+    volume: 500,
+    icon: '👕'
   },
   {
     id: 'sunscreen',
@@ -914,10 +1160,10 @@ export const getGoBagItems = (t: any): GoBagItem[] => [
     description: t.sunscreenDesc,
     category: 'disaster',
     priority: 'high',
-    requiredFor: ['heatwave']
-  ,
+    requiredFor: ['heatwave'],
     weight: 150,
-    volume: 200
+    volume: 200,
+    icon: '🧴'
   },
   {
     id: 'portable_umbrella',
@@ -925,10 +1171,10 @@ export const getGoBagItems = (t: any): GoBagItem[] => [
     description: t.portableUmbrellaDesc,
     category: 'disaster',
     priority: 'medium',
-    requiredFor: ['heatwave']
-  ,
+    requiredFor: ['heatwave'],
     weight: 150,
-    volume: 200
+    volume: 200,
+    icon: '☂️'
   },
   {
     id: 'cooling_towel',
@@ -936,10 +1182,10 @@ export const getGoBagItems = (t: any): GoBagItem[] => [
     description: t.coolingTowelDesc,
     category: 'disaster',
     priority: 'medium',
-    requiredFor: ['heatwave']
-  ,
+    requiredFor: ['heatwave'],
     weight: 100,
-    volume: 150
+    volume: 150,
+    icon: '🧻'
   },
   {
     id: 'portable_fan',
@@ -947,10 +1193,10 @@ export const getGoBagItems = (t: any): GoBagItem[] => [
     description: t.portableFanDesc,
     category: 'disaster',
     priority: 'low',
-    requiredFor: ['heatwave']
-  ,
+    requiredFor: ['heatwave'],
     weight: 100,
-    volume: 150
+    volume: 150,
+    icon: '🌀'
   }
 ];
 
@@ -968,9 +1214,6 @@ export const getEvacuationInstructions = (t: any): EvacuationInstruction[] => [
     description: t.followOfficialsDesc,
     priority: 'high',
     requiredFor: []
-  ,
-    weight: 150,
-    volume: 200
   },
   {
     id: 'avoid_elevators',
@@ -978,9 +1221,6 @@ export const getEvacuationInstructions = (t: any): EvacuationInstruction[] => [
     description: t.avoidElevatorsDesc,
     priority: 'high',
     requiredFor: []
-  ,
-    weight: 150,
-    volume: 200
   },
   {
     id: 'use_stairs',
@@ -988,9 +1228,6 @@ export const getEvacuationInstructions = (t: any): EvacuationInstruction[] => [
     description: t.useStairsDesc,
     priority: 'high',
     requiredFor: []
-  ,
-    weight: 150,
-    volume: 200
   },
   {
     id: 'help_others',
@@ -998,9 +1235,6 @@ export const getEvacuationInstructions = (t: any): EvacuationInstruction[] => [
     description: t.helpOthersDesc,
     priority: 'medium',
     requiredFor: []
-  ,
-    weight: 100,
-    volume: 150
   },
   {
     id: 'mobility_assistance',
@@ -1008,9 +1242,6 @@ export const getEvacuationInstructions = (t: any): EvacuationInstruction[] => [
     description: t.mobilityAssistanceDesc,
     priority: 'high',
     requiredFor: ['hasMobilityIssues']
-  ,
-    weight: 150,
-    volume: 200
   },
   {
     id: 'pregnant_evacuation',
@@ -1018,9 +1249,6 @@ export const getEvacuationInstructions = (t: any): EvacuationInstruction[] => [
     description: t.pregnantEvacuationDesc,
     priority: 'high',
     requiredFor: ['isPregnant']
-  ,
-    weight: 150,
-    volume: 200
   },
   {
     id: 'children_safety',
@@ -1028,9 +1256,13 @@ export const getEvacuationInstructions = (t: any): EvacuationInstruction[] => [
     description: t.childrenSafetyDesc,
     priority: 'high',
     requiredFor: ['hasChildren']
-  ,
-    weight: 150,
-    volume: 200
+  },
+  {
+    id: 'child_evacuation',
+    title: t.childEvacuation,
+    description: t.childEvacuationDesc,
+    priority: 'high',
+    requiredFor: ['isChild']
   },
   {
     id: 'pet_evacuation',
@@ -1038,9 +1270,6 @@ export const getEvacuationInstructions = (t: any): EvacuationInstruction[] => [
     description: t.petEvacuationDesc,
     priority: 'medium',
     requiredFor: ['hasPets']
-  ,
-    weight: 100,
-    volume: 150
   },
   {
     id: 'hearing_impaired',
@@ -1048,9 +1277,6 @@ export const getEvacuationInstructions = (t: any): EvacuationInstruction[] => [
     description: t.hearingImpairedDesc,
     priority: 'high',
     requiredFor: ['hasHearingImpairment']
-  ,
-    weight: 150,
-    volume: 200
   },
   {
     id: 'visual_impaired',
@@ -1105,6 +1331,17 @@ export const getGameModes = (t: any): GameMode[] => [
       maxItems: 50
     },
     icon: '👨‍👩‍👧‍👦'
+  },
+  {
+    id: 'child',
+    name: t.childBagMode,
+    description: t.childBagModeDesc,
+    constraints: {
+      maxWeight: 7000, // 7kg
+      maxVolume: 20000, // 20L
+      maxItems: 20
+    },
+    icon: '🧒'
   }
 ];
 

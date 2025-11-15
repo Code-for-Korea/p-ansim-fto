@@ -4,6 +4,7 @@ export interface PersonalCharacteristics {
   isPregnant: boolean;
   hasMobilityIssues: boolean;
   isElderly: boolean;
+  isChild: boolean;
   hasHearingImpairment: boolean;
   hasVisualImpairment: boolean;
   
@@ -11,9 +12,6 @@ export interface PersonalCharacteristics {
   hasChildren: boolean;
   hasPets: boolean;
   petType?: 'dog' | 'cat' | 'bird' | 'other';
-  
-  // Location
-  location: string;
   
   // Medical needs
   hasMedicalConditions: boolean;
@@ -30,7 +28,6 @@ export interface PersonalCharacteristics {
   // Special circumstances
   livesNearMountain: boolean;
   hasInfant: boolean;
-  isPregnant: boolean;
   
   // Other
   hasCar: boolean;
@@ -54,6 +51,7 @@ export interface GoBagItem {
   weight: number; // in grams
   volume: number; // in cubic centimeters
   isEssential?: boolean; // if true, must be included
+  icon?: string; // emoji icon for the item
 }
 
 export interface EvacuationInstruction {

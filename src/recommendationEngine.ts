@@ -1,4 +1,4 @@
-import { PersonalCharacteristics, PersonalizedRecommendations, GoBagItem, EvacuationInstruction } from './types';
+import { PersonalCharacteristics, PersonalizedRecommendations } from './types';
 import { getGoBagItems, getEvacuationInstructions } from './data';
 
 export function generatePersonalizedRecommendations(
@@ -34,6 +34,8 @@ export function generatePersonalizedRecommendations(
           return characteristics.isPregnant;
         case 'hasMobilityIssues':
           return characteristics.hasMobilityIssues;
+        case 'isChild':
+          return characteristics.isChild;
         case 'hasHearingImpairment':
           return characteristics.hasHearingImpairment;
         case 'hasVisualImpairment':
@@ -81,6 +83,8 @@ export function generatePersonalizedRecommendations(
           return characteristics.isPregnant;
         case 'hasMobilityIssues':
           return characteristics.hasMobilityIssues;
+        case 'isChild':
+          return characteristics.isChild;
         case 'hasHearingImpairment':
           return characteristics.hasHearingImpairment;
         case 'hasVisualImpairment':
@@ -112,12 +116,12 @@ export function generatePersonalizedRecommendations(
     recommendations.additionalNotes.push(t.elderlyNote);
   }
 
-  if (characteristics.hasMedicalConditions && characteristics.medicalConditions.length > 0) {
-    recommendations.additionalNotes.push(`${t.medicalConditionsNote} ${characteristics.medicalConditions.join(', ')}`);
+  if (characteristics.isChild) {
+    recommendations.additionalNotes.push(t.childNote);
   }
 
-  if (characteristics.location) {
-    recommendations.additionalNotes.push(`${characteristics.location} ${t.locationNote}`);
+  if (characteristics.hasMedicalConditions && characteristics.medicalConditions.length > 0) {
+    recommendations.additionalNotes.push(`${t.medicalConditionsNote} ${characteristics.medicalConditions.join(', ')}`);
   }
 
   if (characteristics.hasEmergencyContact) {

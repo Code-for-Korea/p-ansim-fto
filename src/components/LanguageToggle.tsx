@@ -3,7 +3,7 @@ import { useLanguage } from '../contexts/LanguageContext';
 import { Globe } from 'lucide-react';
 
 const LanguageToggle: React.FC = () => {
-  const { language, setLanguage, t } = useLanguage();
+  const { language, setLanguage } = useLanguage();
 
   const toggleLanguage = () => {
     setLanguage(language === 'ko' ? 'en' : 'ko');
