@@ -88,6 +88,15 @@ const PersonalCharacteristicsForm: React.FC<PersonalCharacteristicsFormProps> = 
           <label className="checkbox-item">
             <input
               type="checkbox"
+              checked={formData.isChild}
+              onChange={(e) => handleCheckboxChange('isChild', e.target.checked)}
+            />
+            <span>{t.isChild}</span>
+          </label>
+          
+          <label className="checkbox-item">
+            <input
+              type="checkbox"
               checked={formData.hasHearingImpairment}
               onChange={(e) => handleCheckboxChange('hasHearingImpairment', e.target.checked)}
             />

@@ -34,6 +34,8 @@ export function generatePersonalizedRecommendations(
           return characteristics.isPregnant;
         case 'hasMobilityIssues':
           return characteristics.hasMobilityIssues;
+        case 'isChild':
+          return characteristics.isChild;
         case 'hasHearingImpairment':
           return characteristics.hasHearingImpairment;
         case 'hasVisualImpairment':
@@ -81,6 +83,8 @@ export function generatePersonalizedRecommendations(
           return characteristics.isPregnant;
         case 'hasMobilityIssues':
           return characteristics.hasMobilityIssues;
+        case 'isChild':
+          return characteristics.isChild;
         case 'hasHearingImpairment':
           return characteristics.hasHearingImpairment;
         case 'hasVisualImpairment':

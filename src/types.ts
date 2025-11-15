@@ -4,6 +4,7 @@ export interface PersonalCharacteristics {
   isPregnant: boolean;
   hasMobilityIssues: boolean;
   isElderly: boolean;
+  isChild: boolean;
   hasHearingImpairment: boolean;
   hasVisualImpairment: boolean;
   

@@ -39,6 +39,7 @@ export interface Translations {
   isPregnant: string;
   hasMobilityIssues: string;
   isElderly: string;
+  isChild: string;
   hasHearingImpairment: string;
   hasVisualImpairment: string;
   
@@ -421,6 +422,7 @@ export const translations: Record<'ko' | 'en', Translations> = {
     isPregnant: '임신 중입니다',
     hasMobilityIssues: '보행에 어려움이 있습니다',
     isElderly: '65세 이상입니다',
+    isChild: '저는 어린이입니다',
     hasHearingImpairment: '청각에 어려움이 있습니다',
     hasVisualImpairment: '시각에 어려움이 있습니다',
     
@@ -802,6 +804,7 @@ export const translations: Record<'ko' | 'en', Translations> = {
     isPregnant: 'I am pregnant',
     hasMobilityIssues: 'I have mobility difficulties',
     isElderly: 'I am 65 years or older',
+    isChild: 'I am a child',
     hasHearingImpairment: 'I have hearing difficulties',
     hasVisualImpairment: 'I have visual difficulties',
     
