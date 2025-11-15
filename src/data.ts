@@ -1194,6 +1194,13 @@ export const getEvacuationInstructions = (t: any): EvacuationInstruction[] => [
     requiredFor: ['hasChildren']
   },
   {
+    id: 'child_evacuation',
+    title: t.childEvacuation,
+    description: t.childEvacuationDesc,
+    priority: 'high',
+    requiredFor: ['isChild']
+  },
+  {
     id: 'pet_evacuation',
     title: t.petEvacuation,
     description: t.petEvacuationDesc,

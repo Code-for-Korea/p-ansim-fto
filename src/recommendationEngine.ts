@@ -116,6 +116,10 @@ export function generatePersonalizedRecommendations(
     recommendations.additionalNotes.push(t.elderlyNote);
   }
 
+  if (characteristics.isChild) {
+    recommendations.additionalNotes.push(t.childNote);
+  }
+
   if (characteristics.hasMedicalConditions && characteristics.medicalConditions.length > 0) {
     recommendations.additionalNotes.push(`${t.medicalConditionsNote} ${characteristics.medicalConditions.join(', ')}`);
   }

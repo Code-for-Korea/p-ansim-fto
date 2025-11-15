@@ -210,6 +210,7 @@ export interface Translations {
   mobilityAssistance: string;
   pregnantEvacuation: string;
   childrenSafety: string;
+  childEvacuation: string;
   petEvacuation: string;
   hearingImpaired: string;
   visualImpaired: string;
@@ -223,12 +224,14 @@ export interface Translations {
   mobilityAssistanceDesc: string;
   pregnantEvacuationDesc: string;
   childrenSafetyDesc: string;
+  childEvacuationDesc: string;
   petEvacuationDesc: string;
   hearingImpairedDesc: string;
   visualImpairedDesc: string;
   
   // Additional notes
   elderlyNote: string;
+  childNote: string;
   medicalConditionsNote: string;
   locationNote: string;
   emergencyContactNote: string;
@@ -631,6 +634,7 @@ export const translations: Record<'ko' | 'en', Translations> = {
     mobilityAssistance: '보행보조기 사용',
     pregnantEvacuation: '임신부 특별 주의',
     childrenSafety: '아이 안전 확보',
+    childEvacuation: '어린이 대피 안내',
     petEvacuation: '반려동물 대피',
     hearingImpaired: '청각장애인 주의사항',
     visualImpaired: '시각장애인 주의사항',
@@ -644,12 +648,14 @@ export const translations: Record<'ko' | 'en', Translations> = {
     mobilityAssistanceDesc: '보행이 어려운 경우 보조기를 사용하여 안전하게 이동하세요.',
     pregnantEvacuationDesc: '무리하지 말고 천천히 이동하며, 복부를 보호하세요.',
     childrenSafetyDesc: '아이의 손을 잡고 함께 이동하며, 아이가 혼자 남지 않도록 주의하세요.',
+    childEvacuationDesc: '어른들과 함께 이동하고, 혼자 떨어지지 않도록 주의하세요. 도움이 필요하면 호루라기를 불어주세요.',
     petEvacuationDesc: '반려동물을 이동장에 넣고 함께 대피하세요.',
     hearingImpairedDesc: '시각적 신호에 주의하고, 주변 사람들에게 도움을 요청하세요.',
     visualImpairedDesc: '안내견이나 지팡이를 사용하고, 주변 사람들의 도움을 받으세요.',
     
     // Additional notes
     elderlyNote: '고령자이시므로 무리하지 말고 천천히 행동하세요.',
+    childNote: '어린이이므로 어른들과 함께 행동하고, 혼자 떨어지지 않도록 주의하세요.',
     medicalConditionsNote: '의료진에게 다음 질환을 알려주세요:',
     locationNote: '지역의 대피소 위치를 미리 확인해두세요.',
     emergencyContactNote: '비상연락처를 기억하고 있거나 휴대폰에 저장해두세요.',
@@ -1051,6 +1057,7 @@ export const translations: Record<'ko' | 'en', Translations> = {
     mobilityAssistance: 'Use Mobility Aid',
     pregnantEvacuation: 'Special Care for Pregnant Women',
     childrenSafety: 'Ensure Children\'s Safety',
+    childEvacuation: 'Child Evacuation Guide',
     petEvacuation: 'Pet Evacuation',
     hearingImpaired: 'For Hearing Impaired',
     visualImpaired: 'For Visually Impaired',
@@ -1064,12 +1071,14 @@ export const translations: Record<'ko' | 'en', Translations> = {
     mobilityAssistanceDesc: 'Use mobility aids to move safely if you have difficulty walking.',
     pregnantEvacuationDesc: 'Don\'t overexert yourself, move slowly, and protect your abdomen.',
     childrenSafetyDesc: 'Hold your child\'s hand and move together, making sure they don\'t get left alone.',
+    childEvacuationDesc: 'Stay with adults and make sure you don\'t get separated. Blow your whistle if you need help.',
     petEvacuationDesc: 'Put your pet in a carrier and evacuate together.',
     hearingImpairedDesc: 'Pay attention to visual signals and ask people around you for help.',
     visualImpairedDesc: 'Use a guide dog or cane and ask people around you for help.',
     
     // Additional notes
     elderlyNote: 'Since you are elderly, don\'t overexert yourself and act slowly.',
+    childNote: 'Since you are a child, stay with adults and make sure you don\'t get separated from them.',
     medicalConditionsNote: 'Inform medical personnel about the following conditions:',
     locationNote: 'Check the location of evacuation centers in your area in advance.',
     emergencyContactNote: 'Remember emergency contacts or save them in your phone.',
