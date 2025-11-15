@@ -288,7 +288,10 @@ const BagPackingGame: React.FC<BagPackingGameProps> = ({
                   }}
                 >
                 <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: '0.5rem' }}>
-                  <h4 style={{ margin: 0, fontSize: '1rem' }}>{item.name}</h4>
+                  <h4 style={{ margin: 0, fontSize: '1rem', display: 'flex', alignItems: 'center', gap: '8px' }}>
+                    {item.icon && <span style={{ fontSize: '1.2rem' }}>{item.icon}</span>}
+                    {item.name}
+                  </h4>
                   <span
                     style={{
                       padding: '2px 6px',
@@ -344,7 +347,10 @@ const BagPackingGame: React.FC<BagPackingGameProps> = ({
                   }}
                 >
                   <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: '0.5rem' }}>
-                    <h4 style={{ margin: 0, fontSize: '1rem' }}>{packed.item.name}</h4>
+                    <h4 style={{ margin: 0, fontSize: '1rem', display: 'flex', alignItems: 'center', gap: '8px' }}>
+                      {packed.item.icon && <span style={{ fontSize: '1.2rem' }}>{packed.item.icon}</span>}
+                      {packed.item.name}
+                    </h4>
                     <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
                       <span style={{ fontSize: '0.9rem', color: '#6c757d' }}>x{packed.quantity}</span>
                       <button

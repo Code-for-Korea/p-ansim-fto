@@ -269,17 +269,6 @@ const PersonalCharacteristicsForm: React.FC<PersonalCharacteristicsFormProps> = 
 
       <div style={{ marginBottom: '2rem' }}>
         <h3 style={{ marginBottom: '1rem', color: '#007bff' }}>{t.otherInfo}</h3>
-        <div className="form-group">
-          <label className="form-label">{t.location}</label>
-          <input
-            type="text"
-            className="form-control"
-            value={formData.location}
-            onChange={(e) => handleTextChange('location', e.target.value)}
-            placeholder={t.locationPlaceholder}
-          />
-        </div>
-        
         <div className="checkbox-group">
           <label className="checkbox-item">
             <input

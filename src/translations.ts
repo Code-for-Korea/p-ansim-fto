@@ -72,8 +72,6 @@ export interface Translations {
   medicationsPlaceholder: string;
   
   // Other info
-  location: string;
-  locationPlaceholder: string;
   hasCar: string;
   hasEmergencyContact: string;
   
@@ -233,7 +231,6 @@ export interface Translations {
   elderlyNote: string;
   childNote: string;
   medicalConditionsNote: string;
-  locationNote: string;
   emergencyContactNote: string;
   
   // Disaster-specific notes
@@ -496,8 +493,6 @@ export const translations: Record<'ko' | 'en', Translations> = {
     medicationsPlaceholder: '예: 혈압약, 당뇨약',
     
     // Other info
-    location: '거주 지역',
-    locationPlaceholder: '예: 성산동, 강남구',
     hasCar: '자동차를 소유하고 있습니다',
     hasEmergencyContact: '비상연락처를 알고 있습니다',
     
@@ -657,7 +652,6 @@ export const translations: Record<'ko' | 'en', Translations> = {
     elderlyNote: '고령자이시므로 무리하지 말고 천천히 행동하세요.',
     childNote: '어린이이므로 어른들과 함께 행동하고, 혼자 떨어지지 않도록 주의하세요.',
     medicalConditionsNote: '의료진에게 다음 질환을 알려주세요:',
-    locationNote: '지역의 대피소 위치를 미리 확인해두세요.',
     emergencyContactNote: '비상연락처를 기억하고 있거나 휴대폰에 저장해두세요.',
     
     // Disaster-specific notes
@@ -919,8 +913,6 @@ export const translations: Record<'ko' | 'en', Translations> = {
     medicationsPlaceholder: 'e.g., blood pressure medication, diabetes medication',
     
     // Other info
-    location: 'Location',
-    locationPlaceholder: 'e.g., Seongsan-dong, Gangnam-gu',
     hasCar: 'I own a car',
     hasEmergencyContact: 'I know emergency contacts',
     
@@ -1080,7 +1072,6 @@ export const translations: Record<'ko' | 'en', Translations> = {
     elderlyNote: 'Since you are elderly, don\'t overexert yourself and act slowly.',
     childNote: 'Since you are a child, stay with adults and make sure you don\'t get separated from them.',
     medicalConditionsNote: 'Inform medical personnel about the following conditions:',
-    locationNote: 'Check the location of evacuation centers in your area in advance.',
     emergencyContactNote: 'Remember emergency contacts or save them in your phone.',
     
     // Disaster-specific notes

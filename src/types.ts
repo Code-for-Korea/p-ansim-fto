@@ -13,9 +13,6 @@ export interface PersonalCharacteristics {
   hasPets: boolean;
   petType?: 'dog' | 'cat' | 'bird' | 'other';
   
-  // Location
-  location: string;
-  
   // Medical needs
   hasMedicalConditions: boolean;
   medicalConditions: string[];
@@ -54,6 +51,7 @@ export interface GoBagItem {
   weight: number; // in grams
   volume: number; // in cubic centimeters
   isEssential?: boolean; // if true, must be included
+  icon?: string; // emoji icon for the item
 }
 
 export interface EvacuationInstruction {

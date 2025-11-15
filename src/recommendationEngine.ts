@@ -124,10 +124,6 @@ export function generatePersonalizedRecommendations(
     recommendations.additionalNotes.push(`${t.medicalConditionsNote} ${characteristics.medicalConditions.join(', ')}`);
   }
 
-  if (characteristics.location) {
-    recommendations.additionalNotes.push(`${characteristics.location} ${t.locationNote}`);
-  }
-
   if (characteristics.hasEmergencyContact) {
     recommendations.additionalNotes.push(t.emergencyContactNote);
   }
